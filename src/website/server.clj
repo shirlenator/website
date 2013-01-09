@@ -1,7 +1,12 @@
 (ns website.server
   (:require [noir.server :as server]))
 
-(server/load-views-ns 'website.views)
+;;(server/load-views-ns 'website.views)
+
+(server/load-views "src/website/views")
+
+(def handler (server/gen-handler {:mode :dev 
+                                  :ns 'website}))
 
 (defn -main [& m]
   (let [mode (keyword (or (first m) :dev))
