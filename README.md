@@ -1,7 +1,7 @@
 # website
 
-A super basic static website written in noir. 
-A super basic static website written in noir. 
+A super basic static website using noir. 
+A super basic static website using noir. 
 
 Redundancy.. BAH!
 
